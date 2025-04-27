@@ -1,0 +1,14 @@
+services:
+  flagsx0.web:
+    image: ${DOCKER_REGISTRY-}flagsx0web
+    build:
+      context: .
+      dockerfile: FlagsX0.Web/Dockerfile
+  mysql-flagx0:
+    image: mysql:8.0
+    container_name: mysql-flagX0
+    ports: 
+        - 4306:3306
+    environment:
+        - MYSQL_DATABASE=flagdb
+        - MYSQL_ROOT_PASSWORD=pass

@@ -1,0 +1,17 @@
+﻿@model IndexViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (User.Identity?.IsAuthenticated ?? false) {
+    <a asp-action="create" asp-controller="flags" class="btn btn-primary">Create Flags</a>
+}else
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Please Login o Sign Up</p>
+    </div>
+}
+
+
