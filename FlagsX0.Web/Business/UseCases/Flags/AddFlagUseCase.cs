@@ -1,34 +1,40 @@
-﻿using FlagsX0.Web.Data;
+﻿using FlagsX0.Web.Business.UserInfo;
+using FlagsX0.Web.Data;
 using FlagsX0.Web.Data.Entities;
-using System.Security.Claims;
-
+using Microsoft.EntityFrameworkCore;
+using ROP;
 
 namespace FlagsX0.Web.Business.UseCases.Flags
 {
-    public class AddFlagUseCase
+    public class AddFlagUseCase(ApplicationDbContext applicationDbContext, IFlagUserDetails flagUserDetails)
     {
-        private readonly ApplicationDbContext _applicationDbContext;
-        private readonly IHttpContextAccessor _httpContextAccesor;
+        public async Task<Result<bool>> Execute(string flagName, bool isActive)
+        => await ValidateFlag(flagName)
+                .Bind(x => AddFlagToDB(x, isActive));
 
-        public AddFlagUseCase(ApplicationDbContext applicationDbContext, IHttpContextAccessor httpContextAccesor)
+        private async Task<Result<String>> ValidateFlag(string flagName)
         {
-            _applicationDbContext = applicationDbContext;
-            _httpContextAccesor = httpContextAccesor;
+            bool flagExists = await applicationDbContext.Flags.Where(a => a.Name.Equals(flagName, StringComparison.InvariantCultureIgnoreCase)).AnyAsync();
+
+            if (flagExists)
+            {
+                return Result.Failure<string>($"Flag {flagName} already exists");
+            }
+
+            return flagName;
         }
 
-        public async Task<bool> Execute(string flagName, bool IsEnabled)
+        private async Task<Result<bool>> AddFlagToDB(string flagName, bool isActive)
         {
-            string userId = _httpContextAccesor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
-
             FlagEntity entity = new()
             {
                 Name = flagName,
-                UserId = userId,
-                Value = IsEnabled,
+                UserId = flagUserDetails.UserId,
+                Value = isActive,
             };
 
-            var response = await _applicationDbContext.Flags.AddAsync(entity);
-            await _applicationDbContext.SaveChangesAsync();
+            _ = await applicationDbContext.Flags.AddAsync(entity);
+            await applicationDbContext.SaveChangesAsync();
 
             return true;
         }

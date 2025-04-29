@@ -1,4 +1,5 @@
 using FlagsX0.Web.Business.UseCases.Flags;
+using FlagsX0.Web.Business.UserInfo;
 using FlagsX0.Web.Data;
 using FlagX0.Web.Business.UseCases;
 using Microsoft.AspNetCore.Identity;
@@ -23,6 +24,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<FlagsUseCases>();
 builder.Services.AddScoped<AddFlagUseCase>();
 builder.Services.AddScoped<GetFlagsUseCase>();
+builder.Services.AddScoped<IFlagUserDetails, FlagUserDetails>();
 
 // Build Builder
 var app = builder.Build();

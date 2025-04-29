@@ -7,18 +7,9 @@ namespace FlagsX0.Web.Business.UserInfo
         public string UserId { get; }
     }
 
-    public class FlagUserDetails : IFlagUserDetails
+    public class FlagUserDetails(IHttpContextAccessor httpContextAccessor, UserManager<IdentityUser> userManager) : IFlagUserDetails
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly UserManager<IdentityUser> _userManager;
-
-        public FlagUserDetails(IHttpContextAccessor httpContextAccessor, UserManager<IdentityUser> userManager)
-        {
-            _httpContextAccessor = httpContextAccessor;
-            _userManager = userManager;
-        }
-
         public string UserId
-            => _userManager.GetUserId(_httpContextAccessor.HttpContext!.User) ?? throw new Exception("This workflow needs authentication!");
+            => userManager.GetUserId(httpContextAccessor.HttpContext!.User) ?? throw new Exception("This workflow needs authentication!");
     }
 }
