@@ -4,12 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FlagsX0.Web.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext(options)
     {
         public DbSet<FlagEntity> Flags { get; set; }
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        {
-        }
+
     }
 }
