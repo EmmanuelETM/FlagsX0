@@ -22,7 +22,7 @@ namespace FlagsX0.Web.Business.UseCases.Flags
                 return Result.Failure<List<FlagDTO>>("No flags found");
             }
 
-            return response.Select(a => new FlagDTO(a.Name, a.Value)).ToList();
+            return response.Select(a => new FlagDTO(a.Name, a.Value, a.Id)).ToList();
         }
     }
 }

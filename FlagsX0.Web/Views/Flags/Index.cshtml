@@ -11,24 +11,33 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var flag in Model.Flags)
+        @if (Model.Flags == null || !Model.Flags.Any())
         {
             <tr>
-                <th scope="row">@flag.Name</th>
-                <td>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" readonly asp-for="@flag.IsEnabled" type="checkbox" role="switch" />
-                    </div>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-outline-danger">
-                        <i class="bi bi-archive"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-primary">
-                        <i class="bi bi-pencil"></i>
-                    </button>
-                </td>
+                <td colspan="3" class="text-center">No flags found.</td>
             </tr>
+        }
+        else
+        {
+            @foreach (var flag in Model.Flags)
+            {
+                <tr>
+                    <th scope="row">@flag.Name</th>
+                    <td>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" readonly asp-for="@flag.IsEnabled" type="checkbox" role="switch" />
+                        </div>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-danger">
+                            <i class="bi bi-archive"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
         }
     </tbody>
 </table>

@@ -41,7 +41,7 @@ namespace FlagsX0.Web.Controllers
             var listFlags = await getFlagsUseCase.Execute();
             return View(new FlagIndexViewModel()
             {
-                Flags = listFlags
+                Flags = listFlags.Value,
             });
         }
     }
