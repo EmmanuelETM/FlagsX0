@@ -13,7 +13,8 @@ namespace FlagsX0.Web.Controllers
         AddFlagUseCase addFlagUseCase,
         GetFlagsUseCase getFlagsUseCase,
         GetSingleFlagUseCase getSingleFlagUseCase,
-        UpdateFlagUseCase updateFlagUseCase
+        UpdateFlagUseCase updateFlagUseCase,
+        DeleteFlagUseCase deleteFlagUseCase
     ) : Controller
     {
         [HttpGet("create")]
@@ -56,12 +57,38 @@ namespace FlagsX0.Web.Controllers
         [HttpPost("{flagName}")]
         public async Task<IActionResult> Update(FlagDTO flag)
         {
-            var singleFlag = await updateFlagUseCase.Execute(flag);
+            if (flag.Name == null || flag.Name == "")
+            {
+                return View("SingleFlag", new SingleFlagViewModel()
+                {
+                    Flag = flag,
+                    Message = "You must provide a valid name!",
+                });
+            }
+
+            Result<FlagDTO> singleFlag = await updateFlagUseCase.Execute(flag);
 
             return View("SingleFlag", new SingleFlagViewModel()
             {
                 Flag = singleFlag.Value,
                 Message = singleFlag.Success ? "Updated Correctly" : singleFlag.Errors.First().Message,
+            });
+        }
+
+        [HttpGet("delete/{flagName}")]
+        public async Task<IActionResult> Delete(string flagName)
+        {
+            Result<bool> isDeleted = await deleteFlagUseCase.Execute(flagName);
+
+            if (isDeleted.Success)
+            {
+                return RedirectToAction("");
+            }
+
+            return RedirectToAction("GetSingle", new
+            {
+                flagname = flagName,
+                message = "Updated Correctly!"
             });
         }
 

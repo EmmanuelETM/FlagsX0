@@ -1,8 +1,16 @@
 ﻿@model SingleFlagViewModel
 
+@if (!string.IsNullOrWhiteSpace(@Model.Message))
+{
+    <div class="alert alert-primary" role="alert">
+        @Model.Message
+    </div>
+}
+
 <form 
     asp-action="@Model.Flag.Name" 
     asp-controller="flags" 
+    id="form"
     method="post" 
     class="row row-cols-lg-auto g-3 align-items-center"
 >
@@ -17,6 +25,7 @@
                 class="form-control" 
                 id="inlineFormInputGroupUsername" 
                 placeholder="Flag Name"
+                required
             />
             <input 
                 type="hidden" 

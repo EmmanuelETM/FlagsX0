@@ -8,5 +8,10 @@ namespace FlagsX0.Web.Data
     {
         public DbSet<FlagEntity> Flags { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<FlagEntity>().HasQueryFilter(a => !a.IsDeleted);
+            base.OnModelCreating(builder);
+        }
     }
 }
