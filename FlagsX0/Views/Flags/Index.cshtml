@@ -1,0 +1,23 @@
+@model FlagViewModel
+
+<form asp-action="Create" asp-controller="flags" method="post" class="row row-cols-lg-auto g-3 align-items-center">
+    <div class="col-12">
+        <label class="visually-hidden" for="flagName">Flag Name</label>
+        <div class="input-group">
+            <div class="input-group-text">Flag Name</div>
+            <input asp-for="Name" class="form-control" id="inlineFormInputGroupUsername" placeholder="Flag Name" type="text" />
+        </div>
+    </div>
+    
+    <div class="col-12">
+        <div class="form-check form-switch">
+            <input asp-for="IsEnabled" class="form-check-input" role="switch" type="checkbox" />
+        </div>
+    </div>
+    
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">
+            Create Flag
+        </button>
+    </div>
+</form>
