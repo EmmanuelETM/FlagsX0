@@ -8,7 +8,409 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="" />
+    <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/.config/dotnet-tools.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Areas/Identity/Pages/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Business/UseCases/AddFlagUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Controllers/FlagsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Data/Entities/FlagEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Data/Migrations/20250908153954_InitialMigration.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Data/Migrations/20250908153954_InitialMigration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Data/Migrations/20250908154331_AddFlagEntity.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Data/Migrations/20250908154331_AddFlagEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/FlagsX0.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Models/ErrorViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Models/FlagViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/Flags/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/Home/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/Shared/Error.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/Shared/_Layout.cshtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Views/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/FlagsX0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/FlagsX0.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/FlagsX0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/FlagsX0.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/FlagsX0.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/FlagsX0.staticwebassets.endpoints.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/FlagsX0.staticwebassets.runtime.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Humanizer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.AspNetCore.Cryptography.Internal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.UI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Build.Locator.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Data.Sqlite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Sqlite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.FileProviders.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.FileProviders.Embedded.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.Identity.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.Identity.Stores.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Mono.TextTemplating.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/Npgsql.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/SQLitePCLRaw.batteries_v2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/SQLitePCLRaw.core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/SQLitePCLRaw.provider.e_sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/System.CodeDom.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/System.Composition.AttributedModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/System.Composition.Convention.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/System.Composition.Hosting.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/System.Composition.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/System.Composition.TypedParts.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/browser-wasm/nativeassets/net9.0/e_sqlite3.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-arm/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-arm64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-armel/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-mips64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-musl-arm/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-musl-s390x/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-musl-x64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-ppc64le/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-s390x/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-x64/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/linux-x86/native/libe_sqlite3.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/osx-arm64/native/libe_sqlite3.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/osx-x64/native/libe_sqlite3.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/win-arm/native/e_sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/win-arm64/native/e_sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/win-x64/native/e_sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/runtimes/win-x86/native/e_sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.RazorAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.RazorAssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.csproj.Up2Date" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/FlagsX0.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/apphost" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/003kzxr6sa-notf2xhcfb.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/0awsaw255c-v0zj4ognzu.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/0k1i85ntyh-6cfz1n2cew.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/14ipv7q33s-bqjiyaj88i.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/1fc4q00scq-khv3u5hwcm.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/1nopqtlgzg-ilo7uva0vt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/1q067iug31-bqjiyaj88i.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/268z94fs53-ee0r1s7dh0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/2tikzqlmtu-ag7o75518u.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/3es57zrcdu-aexeepp0ev.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/3gid6ouv8z-s35ty4nyc5.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/3i2ahq2np7-c2oey78nd0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/3tzsqhslk9-ub07r2b239.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/3xjy4fqoqz-6pdc2jztkx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/44qhjage5y-fvhpjtyr6v.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/47012z8l2l-pj5nd1wqec.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/4oluj50bw3-cosvhxvwiu.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/4vzefxwp2m-46ein0sx1k.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/5b29lgecp6-0j3bgjxly4.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/6g740leid6-46ein0sx1k.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/76quujv8hp-87fc7y1x7t.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/79qtmzhkik-06098lyss8.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/7o8oyvng68-tdbxkamptv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/7zoay606b6-6cfz1n2cew.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/84k3hkdz6h-muycvpuwrr.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/8axix7wldr-fsbi9cje9m.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/8l10o84cys-tdbxkamptv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/8xykfy6qmd-r4e9w2rdcm.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/8zup4bwhfd-ub07r2b239.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/94n00gnkl3-o1o13a6vjx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/9glsckmvxo-aexeepp0ev.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/9muusbdg0a-x0q3zqp4vz.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/a3ygkwa5zy-2z0ns9nrw6.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/abb54pgm6i-jfsiqqwiad.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/alxciq03el-j5mq2jizvt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ay6kh1uwh0-ag7o75518u.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/b9lhb08218-ttgo8qnofa.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/bh4v3mdph9-v0zj4ognzu.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/bhm7vijakr-r4e9w2rdcm.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/blxxvm5dns-pj5nd1wqec.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/bww8ud00yd-ausgxo2sd3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/cqkj2wdl4j-k8d9w2qqmf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/cynp17w084-c2oey78nd0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/czkcoe99tw-c2jlpeoesf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/d5z9sfpxbi-rzd6atqjts.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ealr4bgfan-khv3u5hwcm.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/eb27mqwgz2-erw9l3u2r3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/edcrak57d7-k8d9w2qqmf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/f4qtf6l5vk-l3n5xuwxn8.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/fo7qppnff8-d7shbmvgxk.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ga5pw23gqr-y7v9cxd14o.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/gihi4gi1nx-qlccset4i1.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/h13888n5oj-vr1egmr9el.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/h9vwtoirpy-j5mq2jizvt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/hdm1arz7rc-lugek5hnai.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/hh28b56uyo-eagdlg3htc.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/hh8ihyobdx-d7shbmvgxk.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/higufxz8op-vr1egmr9el.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/igscs4x0yk-h1s4sie4z3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ivy2s9gwh5-iovd86k7lj.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/iznc766avz-nvvlpmu67g.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/j3hwsq15kh-47otxtyo56.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/j9swiz3yzq-90yqlj465b.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/jbha0emn9p-47otxtyo56.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/jgo9pygkqp-b7pk76d08c.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/jhg7gy0qse-lzl9nlhx6b.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/jn5va4ndug-rzd6atqjts.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/k0gw5jaf1a-nvvlpmu67g.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/k8b25g0zwc-b7pk76d08c.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/knhigga895-jj8uyg4cgr.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/kxrkoi9nz2-493y06b0oq.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/l186vlgaag-37tfw0ft22.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/lacy4pholh-61n19gt1b8.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ldxy2n3w6q-356vix0kms.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/lr5hmrr0j7-493y06b0oq.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/lz4ywd0ect-xzw0cte36n.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/m3a469k5p8-erw9l3u2r3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/m4sp6p67ou-jd9uben2k1.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/milykjx4dh-4v8eqarkd7.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/n92yj3ndm7-hrwsygsryq.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/nezrqnk58p-muycvpuwrr.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/nlrl0f3xs3-jd9uben2k1.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ns4583i71s-s35ty4nyc5.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/nyyfcdmwn9-ausgxo2sd3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/o5k23vqhrk-06098lyss8.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ofa40bqe71-b9sayid5wm.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ou433einr4-lcd1t2u6c8.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/oxk5o6czdw-fvhpjtyr6v.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/pogzkicjpz-0j3bgjxly4.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/q3naettu8c-4v8eqarkd7.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/qfr28sqcy1-ft3s53vfgj.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/qiduex35p4-kbrnm935zg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/r2us61gno9-ttgo8qnofa.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/rg3ngpastb-2z0ns9nrw6.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/rh65p086id-c2jlpeoesf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/rsc7qacj1u-hrwsygsryq.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/s3tglgz8hr-kbrnm935zg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/sdqdrgz72g-fsbi9cje9m.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/sf8kf2lula-cosvhxvwiu.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/shl81la8hk-63fj8s7r0e.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/t0qo7o574p-o1o13a6vjx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/t6e3b82hrf-mrlpezrjn3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/td07ynvmek-dxx9fxp4il.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/tg53r17ghy-dxx9fxp4il.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/tpsq5dibur-0i3buxo5is.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/u101j9atnv-37tfw0ft22.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/u8428c4e9i-ee0r1s7dh0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ueb88t18z3-0i3buxo5is.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ulzrzhknym-h1s4sie4z3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/uocis9wxbx-lzl9nlhx6b.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/v0zgfp0y55-87fc7y1x7t.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/vltxs1u3vm-xtxxf3hu2r.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/vsrbd71spn-lcd1t2u6c8.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/vw9sls9bhj-jj8uyg4cgr.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/w3g86w6lq1-fr7q2aak1r.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/wykht8wwna-eagdlg3htc.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/x5kglknthr-ft3s53vfgj.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/xa379ftczi-6pdc2jztkx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/yfc7ypekbg-mlv21k5csn.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ym8tkpcl2i-y7v9cxd14o.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/ypthv7q62w-83jwlth58m.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/z408qb6q7a-pk9g2wxc8p.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/zap00c0tb5-63fj8s7r0e.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/znovn4gx72-pk9g2wxc8p.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/zuk1ff9ama-iovd86k7lj.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/compressed/zzna4nrm5w-notf2xhcfb.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/rbcswa.dswa.cache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/ref/FlagsX0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/refint/FlagsX0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/rjimswa.dswa.cache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/scopedcss/bundle/FlagsX0.styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/scopedcss/projectbundle/FlagsX0.bundle.scp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/staticwebassets.build.json.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/FlagsX0.csproj.EntityFrameworkCore.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/FlagsX0.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/FlagsX0.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/FlagsX0.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/js/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery/dist/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery/dist/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/wwwroot/lib/jquery/dist/jquery.slim.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +421,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/FlagsX0" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/AddFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
@@ -98,7 +501,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1757343880512</updated>
-      <workItem from="1757343882203" duration="6142000" />
+      <workItem from="1757343882203" duration="6958000" />
     </task>
     <servers />
   </component>
@@ -106,6 +509,44 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

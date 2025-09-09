@@ -16,16 +16,17 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
-//Dependency Injection
-builder.Services.AddScoped<AddFlagUseCase>();
+// Dependency Injection
+builder.Services.AddScoped<IAddFlagUseCase, AddFlagUseCase>();
 
+// Building the app
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
     var ctx = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     ctx.Database.Migrate();
-}
+} 
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -3,7 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FlagsX0.Business.UseCases;
 
-public class AddFlagUseCase(ApplicationDbContext dbContext)
+public interface IAddFlagUseCase
+{
+    Task<bool> Execute(string flagName, string userId);
+}
+
+public class AddFlagUseCase(ApplicationDbContext dbContext) : IAddFlagUseCase
 {
     private readonly ApplicationDbContext _dbContext = dbContext;
 
@@ -14,6 +19,11 @@ public class AddFlagUseCase(ApplicationDbContext dbContext)
            );
 
         return flagAlreadyExists;
+    }
+
+    public void Example()
+    {
+        
     }
     
 }
