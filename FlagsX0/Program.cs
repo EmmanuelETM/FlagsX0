@@ -1,3 +1,4 @@
+using FlagsX0.Business.Services;
 using FlagsX0.Business.UseCases;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -16,8 +17,13 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+// HTTPContextAccessor
+builder.Services.AddHttpContextAccessor();
+
 // Dependency Injection
-builder.Services.AddScoped<IAddFlagUseCase, AddFlagUseCase>();
+builder.Services.AddScoped<AddFlagUseCase>();
+builder.Services.AddScoped<GetFlagUseCase>();
+builder.Services.AddScoped<IFlagUserDetails, FlagUserDetails>();
 
 // Building the app
 var app = builder.Build();

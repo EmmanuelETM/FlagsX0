@@ -1,29 +1,31 @@
+using System.Security.Claims;
+using FlagsX0.Business.Services;
 using FlagsX0.Data;
+using FlagsX0.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FlagsX0.Business.UseCases;
 
-public interface IAddFlagUseCase
-{
-    Task<bool> Execute(string flagName, string userId);
-}
 
-public class AddFlagUseCase(ApplicationDbContext dbContext) : IAddFlagUseCase
+public class AddFlagUseCase(ApplicationDbContext dbContext, IFlagUserDetails userDetails)
 {
     private readonly ApplicationDbContext _dbContext = dbContext;
+    private readonly IFlagUserDetails _userDetails = userDetails;
 
-    public async Task<bool> Execute(string flagName, string userId)
+    public async Task<bool> Execute(string flagName, bool isEnabled)
     {
-        var flagAlreadyExists = await _dbContext.Flags.AnyAsync(
-            flag => flag.Name.Equals(flagName, StringComparison.InvariantCultureIgnoreCase) && flag.User.Id == userId
-           );
+        var userId = _userDetails.UserId;
 
-        return flagAlreadyExists;
-    }
+        FlagEntity entity = new()
+        {
+            Name = flagName,
+            UserId = userId,
+            Value = isEnabled
+        };
 
-    public void Example()
-    {
+        var response = await _dbContext.Flags.AddAsync(entity);
+        await _dbContext.SaveChangesAsync();
         
+        return true;
     }
-    
 }

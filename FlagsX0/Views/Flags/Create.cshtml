@@ -1,6 +1,10 @@
 @model FlagViewModel
 
-<form asp-action="Create" asp-controller="flags" method="post" class="row row-cols-lg-auto g-3 align-items-center">
+@{
+    ViewData["Title"] = "Create Flag";
+}
+
+<form asp-action="AddFlagToDataBase" asp-controller="flags" method="post" class="row row-cols-lg-auto g-3 align-items-center">
     <div class="col-12">
         <label class="visually-hidden" for="flagName">Flag Name</label>
         <div class="input-group">
