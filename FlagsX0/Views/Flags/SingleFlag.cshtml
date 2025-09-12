@@ -1,5 +1,19 @@
 @model SingleFlagViewModel
 
+@if (!string.IsNullOrWhiteSpace(Model.Error))
+{
+      <div class="alert alert-danger" role="alert">
+            @Model.Error
+      </div>
+}
+
+@if (!string.IsNullOrWhiteSpace(Model.Message))
+{
+      <div class="alert alert-success" role="alert">
+            @Model.Message
+      </div>
+}
+
 <form asp-action="@Model.Flag.Name" asp-controller="Flags" method="post"
       class="row row-cols-lg-auto g-3 align-items-center">
 

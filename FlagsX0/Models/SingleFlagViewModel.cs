@@ -4,6 +4,7 @@ namespace FlagsX0.Models;
 
 public class SingleFlagViewModel
 {
-    public FlagDto Flag { get; set; }
+    public FlagDto? Flag { get; set; }
     public string? Message { get; set; }
+    public string? Error { get; set; }
 }

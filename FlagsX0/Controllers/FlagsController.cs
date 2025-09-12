@@ -1,4 +1,5 @@
 using FlagsX0.Business.UseCases;
+using FlagsX0.DTOs;
 using FlagsX0.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -10,11 +11,13 @@ namespace FlagsX0.Controllers;
 public class FlagsController(
     AddFlagUseCase addFlagUseCase,
     GetFlagsUseCase getFlagUseCase,
-    GetSingleFlagUseCase getSingleFlagUseCase) : Controller
+    GetSingleFlagUseCase getSingleFlagUseCase,
+    UpdateFlagUseCase updateFlagUseCase) : Controller
 {
     private readonly AddFlagUseCase _addFlagUseCase = addFlagUseCase;
     private readonly GetFlagsUseCase _getFlagUseCase = getFlagUseCase;
     private readonly GetSingleFlagUseCase _getSingleFlagUseCase = getSingleFlagUseCase;
+    private readonly UpdateFlagUseCase _updateFlagUseCase = updateFlagUseCase;
 
     [HttpGet("Create")]
     public IActionResult Create()
@@ -60,10 +63,30 @@ public class FlagsController(
     {
         var singleFlag = await _getSingleFlagUseCase.Execute(flagName);
 
+
         return View("SingleFlag", new SingleFlagViewModel
         {
             Flag = singleFlag.Value,
             Message = message
+        });
+    }
+
+    [HttpPost("{flagName}")]
+    public async Task<IActionResult> UpdateFlag(FlagDto flag)
+    {
+        var updatedFlag = await _updateFlagUseCase.Execute(flag);
+
+        if (updatedFlag.Success)
+            return View("SingleFlag", new SingleFlagViewModel
+            {
+                Flag = updatedFlag.Value,
+                Message = "Flag Updated Correctly"
+            });
+
+        return View("SingleFlag", new SingleFlagViewModel
+        {
+            Flag = flag,
+            Error = updatedFlag.Errors.First().Message
         });
     }
 }
