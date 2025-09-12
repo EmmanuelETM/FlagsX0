@@ -8,13 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/dataSources/39056908-9159-47c7-b414-e7ebc1de5374.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/dataSources/39056908-9159-47c7-b414-e7ebc1de5374.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/data_source_mapping.xml" afterDir="false" />
+    <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/FlagsX0/Business/UseCases/AddFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Business/UseCases/AddFlagUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/FlagsX0/Controllers/FlagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0/Controllers/FlagsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/AddFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/UseCases/AddFlagUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/GetFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/UseCases/GetFlagUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/FlagsX0.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/FlagsX0.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Models/FlagIndexViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Models/FlagIndexViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Models/FlagViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Models/FlagViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Views/Flags/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +29,12 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/FlagsX0" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Mappers/FlagEntityExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Business/Mappers/FlagEntityExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Services/FlagUserDetails.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/AddFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/GetFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,9 +46,10 @@
     <setting file="file://$PROJECT_DIR$/FlagsX0/Views/Flags/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="32QDPdnPsB5QQUxVLPeG4i6qUIl" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -58,6 +64,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/emmanuel_tm/Downloads/FlagsX0",
     "node.js.detected.package.eslint": "true",
@@ -65,7 +72,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "rider.code.cleanup.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -116,13 +124,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1757343880512</updated>
-      <workItem from="1757343882203" duration="15163000" />
+      <workItem from="1757343882203" duration="15550000" />
+      <workItem from="1757599993652" duration="6903000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="RECENT_FILTERS">
@@ -163,7 +173,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/FlagsX0" />
+    </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -182,5 +197,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,4 +1,3 @@
-@using FlagsX0.Data.Entities
 @model FlagIndexViewModel
 
 @{
@@ -18,24 +17,36 @@
     </tr>
     </thead>
     <tbody>
-    @foreach (var flag in Model.Flags)
+    @if (Model.Error != null)
     {
         <tr>
-            <th scope="row">@flag.Name</th>
-            <td>
-                <div class="form-check form-switch">
-                    <input asp-for="@flag.IsEnabled" class="form-check-input" readonly role="switch" type="checkbox" />
-                </div>
-            </td>
-            <td>
-                <button type="button" class="btn btn-outline-danger">
-                    <i class="bi bi-archive"></i>
-                </button>
-                <button type="button" class="btn btn-outline-primary">
-                    <i class="bi bi-pencil"></i>
-                </button>
+            <td colspan="3" class="text-center text-danger">
+                @Model.Error
             </td>
         </tr>
+    }
+    else
+    {
+        @foreach (var flag in Model.Flags)
+        {
+            <tr>
+                <th scope="row">@flag.Name</th>
+                <td>
+                    <div class="form-check form-switch">
+                        <input checked="@flag.IsEnabled" class="form-check-input" readonly role="switch"
+                               type="checkbox"/>
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-outline-danger">
+                        <i class="bi bi-archive"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                </td>
+            </tr>
+        }
     }
     </tbody>
 </table>

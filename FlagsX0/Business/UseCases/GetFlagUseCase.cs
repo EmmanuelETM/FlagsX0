@@ -3,6 +3,7 @@ using FlagsX0.Business.Services;
 using FlagsX0.Data;
 using FlagsX0.DTOs;
 using Microsoft.EntityFrameworkCore;
+using ROP;
 
 namespace FlagsX0.Business.UseCases;
 
@@ -11,7 +12,7 @@ public class GetFlagUseCase(ApplicationDbContext dbContext, IFlagUserDetails use
     private readonly ApplicationDbContext _dbContext = dbContext;
     private readonly IFlagUserDetails _userDetails = userDetails;
 
-    public async Task<List<FlagDto>> Execute()
+    public async Task<Result<List<FlagDto>>>  Execute()
     {
         
         var response = 
