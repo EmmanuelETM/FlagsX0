@@ -14,7 +14,7 @@
       </div>
 }
 
-<form asp-action="@Model.Flag.Name" asp-controller="Flags" method="post"
+<form asp-action="@Model.Flag?.Name" asp-controller="Flags" method="post"
       class="row row-cols-lg-auto g-3 align-items-center">
 
       <div class="col-12">
@@ -25,19 +25,24 @@
                   <div class="input-group-text">
                         Flag Name
                   </div>
-                  <input type="text" asp-for="Flag.Name" class="form-control" id="inlineFormInputGroupUsername"
+                  <input type="text" asp-for="Flag!.Name" class="form-control" id="inlineFormInputGroupUsername"
                          placeholder="Flag Name"/>
-                  <input type="hidden" asp-for="Flag.Id"/>
+                  <input type="hidden" asp-for="Flag!.Id"/>
             </div>
       </div>
 
       <div class="col-12">
             <div class="form-check form-switch">
-                  <input class="form-check-input" asp-for="Flag.IsEnabled" type="checkbox" role="switch"/>
+                  <input class="form-check-input" asp-for="Flag!.IsEnabled" type="checkbox" role="switch"/>
             </div>
       </div>
 
       <div class="col-12">
+            <a asp-action="DeleteFlag" asp-controller="Flags" asp-route-flagName="@Model.Flag?.Name" type="button"
+               class="btn btn-outline-danger">
+                  <i class="bi bi-archive"></i>
+                  Delete
+            </a>
             <button type="submit" class="btn btn-outline-primary">Update Flag</button>
       </div>
 

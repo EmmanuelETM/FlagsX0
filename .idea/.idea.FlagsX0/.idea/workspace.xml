@@ -9,12 +9,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Models/SingleFlagViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Models/SingleFlagViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Entities/FlagEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Data/Entities/FlagEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlagsX0/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/SingleFlag.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Views/Flags/SingleFlag.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Mappers/FlagEntityExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Services/FlagUserDetails.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/AddFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/DeleteFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/GetFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/GetSingleFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/UpdateFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
@@ -125,7 +129,7 @@
       <updated>1757343880512</updated>
       <workItem from="1757343882203" duration="15550000" />
       <workItem from="1757599993652" duration="8622000" />
-      <workItem from="1757686718632" duration="4903000" />
+      <workItem from="1757686718632" duration="9894000" />
     </task>
     <servers />
   </component>

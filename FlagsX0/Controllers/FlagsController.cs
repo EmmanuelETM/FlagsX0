@@ -12,9 +12,11 @@ public class FlagsController(
     AddFlagUseCase addFlagUseCase,
     GetFlagsUseCase getFlagUseCase,
     GetSingleFlagUseCase getSingleFlagUseCase,
-    UpdateFlagUseCase updateFlagUseCase) : Controller
+    UpdateFlagUseCase updateFlagUseCase,
+    DeleteFlagUseCase deleteFlagUseCase) : Controller
 {
     private readonly AddFlagUseCase _addFlagUseCase = addFlagUseCase;
+    private readonly DeleteFlagUseCase _deleteFlagUseCase = deleteFlagUseCase;
     private readonly GetFlagsUseCase _getFlagUseCase = getFlagUseCase;
     private readonly GetSingleFlagUseCase _getSingleFlagUseCase = getSingleFlagUseCase;
     private readonly UpdateFlagUseCase _updateFlagUseCase = updateFlagUseCase;
@@ -87,6 +89,20 @@ public class FlagsController(
         {
             Flag = flag,
             Error = updatedFlag.Errors.First().Message
+        });
+    }
+
+    [HttpGet("delete/{flagName}")]
+    public async Task<IActionResult> DeleteFlag(string flagName)
+    {
+        var isDeleted = await _deleteFlagUseCase.Execute(flagName);
+
+        if (isDeleted.Success) return RedirectToAction("");
+
+        return RedirectToAction("GetSingleFlag", new
+        {
+            flagName,
+            message = "Updated Correctly"
         });
     }
 }

@@ -38,7 +38,8 @@
                     </div>
                 </td>
                 <td>
-                    <a asp-action="" asp-controller="Flags" type="button" class="btn btn-outline-danger">
+                    <a asp-action="DeleteFlag" asp-controller="Flags" asp-route-flagName="@flag.Name" type="button"
+                       class="btn btn-outline-danger">
                         <i class="bi bi-archive"></i>
                     </a>
                     <a asp-action="@flag.Name" asp-controller="Flags" class="btn btn-outline-primary" type="button">
