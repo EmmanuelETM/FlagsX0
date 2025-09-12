@@ -1,8 +1,8 @@
 using FlagsX0.Business.Services;
 using FlagsX0.Business.UseCases;
+using FlagsX0.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using FlagsX0.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +22,8 @@ builder.Services.AddHttpContextAccessor();
 
 // Dependency Injection
 builder.Services.AddScoped<AddFlagUseCase>();
-builder.Services.AddScoped<GetFlagUseCase>();
+builder.Services.AddScoped<GetFlagsUseCase>();
+builder.Services.AddScoped<GetSingleFlagUseCase>();
 builder.Services.AddScoped<IFlagUserDetails, FlagUserDetails>();
 
 // Building the app
@@ -32,7 +33,7 @@ using (var scope = app.Services.CreateScope())
 {
     var ctx = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     ctx.Database.Migrate();
-} 
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -47,6 +48,8 @@ else
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
 app.UseRouting();
 
 app.UseAuthorization();
@@ -54,8 +57,8 @@ app.UseAuthorization();
 app.MapStaticAssets();
 
 app.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}")
+        "default",
+        "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 app.MapRazorPages()

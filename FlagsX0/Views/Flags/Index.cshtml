@@ -38,12 +38,12 @@
                     </div>
                 </td>
                 <td>
-                    <button type="button" class="btn btn-outline-danger">
+                    <a asp-action="" asp-controller="Flags" type="button" class="btn btn-outline-danger">
                         <i class="bi bi-archive"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-primary">
+                    </a>
+                    <a asp-action="@flag.Name" asp-controller="Flags" class="btn btn-outline-primary" type="button">
                         <i class="bi bi-pencil"></i>
-                    </button>
+                    </a>
                 </td>
             </tr>
         }

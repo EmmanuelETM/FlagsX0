@@ -6,12 +6,12 @@ namespace FlagsX0.Business.Mappers;
 public static class FlagEntityExtension
 {
     public static FlagDto ToDto(this FlagEntity entity)
-        => new()
-        {
-            Name = entity.Name,
-            IsEnabled = entity.Value
-        };
-    
-    public static List<FlagDto> ToDto(this List<FlagEntity> entities) 
-    => entities.Select(ToDto).ToList();
+    {
+        return new FlagDto(entity.Id, entity.Name, entity.Value);
+    }
+
+    public static List<FlagDto> ToDto(this List<FlagEntity> entities)
+    {
+        return entities.Select(ToDto).ToList();
+    }
 }

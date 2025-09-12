@@ -1,7 +1,3 @@
 namespace FlagsX0.DTOs;
 
-public class FlagDto
-{
-    public string Name { get; set; }
-    public bool IsEnabled { get; set; }
-}
+public record class FlagDto(int Id, string Name, bool IsEnabled);

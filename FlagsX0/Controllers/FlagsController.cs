@@ -9,10 +9,12 @@ namespace FlagsX0.Controllers;
 [Route("[controller]")]
 public class FlagsController(
     AddFlagUseCase addFlagUseCase,
-    GetFlagUseCase getFlagUseCase) : Controller
+    GetFlagsUseCase getFlagUseCase,
+    GetSingleFlagUseCase getSingleFlagUseCase) : Controller
 {
     private readonly AddFlagUseCase _addFlagUseCase = addFlagUseCase;
-    private readonly GetFlagUseCase _getFlagUseCase = getFlagUseCase;
+    private readonly GetFlagsUseCase _getFlagUseCase = getFlagUseCase;
+    private readonly GetSingleFlagUseCase _getSingleFlagUseCase = getSingleFlagUseCase;
 
     [HttpGet("Create")]
     public IActionResult Create()
@@ -50,6 +52,18 @@ public class FlagsController(
         {
             Flags = [],
             Error = listFlags.Errors.First().Message
+        });
+    }
+
+    [HttpGet("{flagName}")]
+    public async Task<IActionResult> GetSingleFlag(string flagName, string? message)
+    {
+        var singleFlag = await _getSingleFlagUseCase.Execute(flagName);
+
+        return View("SingleFlag", new SingleFlagViewModel
+        {
+            Flag = singleFlag.Value,
+            Message = message
         });
     }
 }
