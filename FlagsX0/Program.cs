@@ -22,7 +22,7 @@ builder.Services.AddHttpContextAccessor();
 
 // Dependency Injection
 builder.Services.AddScoped<AddFlagUseCase>();
-builder.Services.AddScoped<GetFlagsUseCase>();
+builder.Services.AddScoped<GetPaginatedFlagsUseCase>();
 builder.Services.AddScoped<GetSingleFlagUseCase>();
 builder.Services.AddScoped<UpdateFlagUseCase>();
 builder.Services.AddScoped<DeleteFlagUseCase>();

@@ -9,15 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/GetFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Entities/FlagEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Data/Entities/FlagEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Models/FlagIndexViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Models/FlagIndexViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlagsX0/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/SingleFlag.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Views/Flags/SingleFlag.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +31,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Mappers/FlagEntityExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Services/FlagUserDetails.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Services/Pagination.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/AddFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/DeleteFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/GetFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/GetSingleFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/UpdateFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,31 +59,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.FlagsX0: http.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/emmanuel_tm/Downloads/FlagsX0&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.FlagsX0: http.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/emmanuel_tm/Downloads/FlagsX0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rider.code.cleanup.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;,
-      &quot;sqlserver&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "sqlserver"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.FlagsX0: http">
     <configuration name="FlagsX0: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/FlagsX0/FlagsX0.csproj" />
@@ -129,7 +127,7 @@
       <updated>1757343880512</updated>
       <workItem from="1757343882203" duration="15550000" />
       <workItem from="1757599993652" duration="8622000" />
-      <workItem from="1757686718632" duration="9894000" />
+      <workItem from="1757686718632" duration="21544000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,33 @@
     Create Flag
 </a>
 
+<div class="row">
+    <form asp-action="Index" asp-controller="Flags" class="row row-cols-lg-auto g-3 align-items-center" method="get">
+        <div class="col-12">
+            <label for="InlineFormSearch" class="visually-hidden">Search</label>
+            <div class="input-group">
+                <div class="input-group-text">Search</div>
+                <input type="text" asp-for="Pagination!.Search" name="search" class="form-control"
+                       id="InlineFormSearch" placeholder="Flag Name"/>
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="InlineFormSelect" class="visually-hidden">
+                Items Per Page
+            </label>
+
+            <select asp-for="Pagination!.PageSize" asp-items="@new SelectList(@Model.SelectOptions)"
+                    class="form-control" id="InlineFormSelect" name="size">
+                <option>Items Per Page</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </form>
+</div>
+
 <table class="table">
     <thead>
     <tr>
@@ -20,14 +47,12 @@
     @if (Model.Error != null)
     {
         <tr>
-            <td colspan="3" class="text-center text-danger">
-                @Model.Error
-            </td>
+            <td colspan="3" class="text-center text-danger">@Model.Error</td>
         </tr>
     }
     else
     {
-        @foreach (var flag in Model.Flags)
+        @foreach (var flag in Model.Pagination!.Items)
         {
             <tr>
                 <th scope="row">@flag.Name</th>
@@ -51,3 +76,69 @@
     }
     </tbody>
 </table>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        @if (Model.Pagination!.CurrentPage > 1)
+        {
+            <li class="page-item">
+                <a aria-label="Previous" asp-action="Index" asp-controller="Flags"
+                   asp-route-page="1" asp-route-search="@Model.Pagination.Search"
+                   asp-route-size="@Model.Pagination.PageSize" class="page-link">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+        }
+        else
+        {
+            <li class="page-item">
+                <a aria-label="Previous" class="page-link disabled">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+        }
+        
+        <li class="page-item">
+            <a class="page-link" href="#">
+                @Model.Pagination.CurrentPage
+            </a>
+        </li>
+
+        @{
+            var totalPages = (int)Math.Ceiling(Model.Pagination.TotalItems / (double)Model.Pagination.PageSize);
+
+            if (Model.Pagination.CurrentPage < totalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("Index", "Flags", new
+                                               {
+                                                   page = Model.Pagination.CurrentPage + 1,
+                                                   size = Model.Pagination.PageSize,
+                                                   search = Model.Pagination.Search
+                                               })">
+                        @(Model.Pagination.CurrentPage + 1)
+                    </a>
+                </li>
+            }
+
+            if (Model.Pagination.CurrentPage + 1 < totalPages)
+            {
+                <li class="page-item">
+                    <a href="/flags/@totalPages?search=@Model.Pagination.Search&size=@Model.Pagination.PageSize"
+                       class="page-link">
+                        &raquo;
+                    </a>
+                </li>
+            }
+            else
+            {
+                <li class="page-item">
+                    <a aria-label="Next" class="page-link disabled">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            }
+        }
+
+    </ul>
+</nav>

@@ -10,14 +10,14 @@ namespace FlagsX0.Controllers;
 [Route("[controller]")]
 public class FlagsController(
     AddFlagUseCase addFlagUseCase,
-    GetFlagsUseCase getFlagUseCase,
+    GetPaginatedFlagsUseCase getPaginatedFlagsUseCase,
     GetSingleFlagUseCase getSingleFlagUseCase,
     UpdateFlagUseCase updateFlagUseCase,
     DeleteFlagUseCase deleteFlagUseCase) : Controller
 {
     private readonly AddFlagUseCase _addFlagUseCase = addFlagUseCase;
     private readonly DeleteFlagUseCase _deleteFlagUseCase = deleteFlagUseCase;
-    private readonly GetFlagsUseCase _getFlagUseCase = getFlagUseCase;
+    private readonly GetPaginatedFlagsUseCase _getPaginatedFlagsUseCase = getPaginatedFlagsUseCase;
     private readonly GetSingleFlagUseCase _getSingleFlagUseCase = getSingleFlagUseCase;
     private readonly UpdateFlagUseCase _updateFlagUseCase = updateFlagUseCase;
 
@@ -43,19 +43,19 @@ public class FlagsController(
     }
 
     [HttpGet("")]
-    public async Task<IActionResult> Index()
+    [HttpGet("{page:int}")]
+    public async Task<IActionResult> Index(string? search, int page = 1, int size = 5)
     {
-        var listFlags = await _getFlagUseCase.Execute();
+        var listFlags = await _getPaginatedFlagsUseCase.Execute(search, page, size);
 
         if (listFlags.Success)
             return View(new FlagIndexViewModel
             {
-                Flags = listFlags.Value
+                Pagination = listFlags.Value
             });
 
         return View(new FlagIndexViewModel
         {
-            Flags = [],
             Error = listFlags.Errors.First().Message
         });
     }
