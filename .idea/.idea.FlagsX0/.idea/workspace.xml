@@ -8,10 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things">
+    <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/Services/FlagUserDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/Services/FlagUserDetails.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/AddFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/AddFlagUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/DeleteFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/DeleteFlagUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/GetPaginatedFlagsUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/GetSingleFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/GetSingleFlagUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/UpdateFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/UpdateFlagUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlagsX0/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +37,14 @@
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Services/FlagUserDetails.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Services/Pagination.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Business/Services/Pagination.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/AddFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/DeleteFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/AddFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/DeleteFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/GetPaginatedFlagsUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/GetSingleFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/UpdateFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/FlagsUseCases.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/GetSingleFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/UpdateFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Controllers/FlagsController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Controllers/FlagsController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -137,8 +146,17 @@
       <workItem from="1757599993652" duration="8622000" />
       <workItem from="1757686718632" duration="21567000" />
       <workItem from="1757855408511" duration="2233000" />
-      <workItem from="1758057985340" duration="1718000" />
+      <workItem from="1758057985340" duration="4757000" />
     </task>
+    <task id="LOCAL-00001" summary="Validated the input for the Page and PageSize for the Pagination.">
+      <option name="closed" value="true" />
+      <created>1758060437476</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758060437476</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +208,8 @@
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things" />
+    <MESSAGE value="Validated the input for the Page and PageSize for the Pagination." />
+    <option name="LAST_COMMIT_MESSAGE" value="Validated the input for the Page and PageSize for the Pagination." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,15 +1,13 @@
-using FlagsX0.Business.Services;
 using FlagsX0.Data;
 using FlagsX0.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using ROP;
 
-namespace FlagsX0.Business.UseCases;
+namespace FlagsX0.Business.UseCases.Flags;
 
-public class DeleteFlagUseCase(ApplicationDbContext dbContext, IFlagUserDetails userDetails)
+public class DeleteFlagUseCase(ApplicationDbContext dbContext)
 {
     private readonly ApplicationDbContext _dbContext = dbContext;
-    private readonly IFlagUserDetails _userDetails = userDetails;
 
     public async Task<Result<bool>> Execute(string flagName)
     {
@@ -19,8 +17,8 @@ public class DeleteFlagUseCase(ApplicationDbContext dbContext, IFlagUserDetails 
     private async Task<Result<FlagEntity>> GetFromDb(string flagName)
     {
         return await _dbContext.Flags
-            .Where(f => f.UserId == _userDetails.UserId &&
-                        f.Name.ToLower() == flagName.ToLower())
+            .Where(f =>
+                f.Name.ToLower() == flagName.ToLower())
             .SingleAsync();
     }
 

@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
 
 namespace FlagsX0.Business.Services;
 
@@ -7,11 +7,13 @@ public interface IFlagUserDetails
     public string UserId { get; }
 }
 
-public class FlagUserDetails(IHttpContextAccessor httpContext, UserManager<IdentityUser> userManager) : IFlagUserDetails
+public class FlagUserDetails(IHttpContextAccessor httpContext) : IFlagUserDetails
 {
     private readonly IHttpContextAccessor _httpContext = httpContext;
-    private readonly UserManager<IdentityUser> _userManager = userManager;
-    
-    public string UserId => _userManager.GetUserId(_httpContext.HttpContext!.User) 
-                            ?? throw new Exception("This workflow requires authentication");
+
+    public string UserId => _httpContext
+                                .HttpContext?
+                                .User
+                                .FindFirstValue(ClaimTypes.NameIdentifier)!
+                            ?? throw new Exception("This workflow require authentication");
 }

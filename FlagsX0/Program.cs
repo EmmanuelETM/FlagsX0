@@ -1,5 +1,6 @@
 using FlagsX0.Business.Services;
 using FlagsX0.Business.UseCases;
+using FlagsX0.Business.UseCases.Flags;
 using FlagsX0.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 
 // Dependency Injection
+builder.Services.AddScoped<FlagsUseCases>();
 builder.Services.AddScoped<AddFlagUseCase>();
 builder.Services.AddScoped<GetPaginatedFlagsUseCase>();
 builder.Services.AddScoped<GetSingleFlagUseCase>();

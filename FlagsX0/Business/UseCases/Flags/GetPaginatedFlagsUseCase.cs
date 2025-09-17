@@ -6,7 +6,7 @@ using FlagsX0.DTOs;
 using Microsoft.EntityFrameworkCore;
 using ROP;
 
-namespace FlagsX0.Business.UseCases;
+namespace FlagsX0.Business.UseCases.Flags;
 
 public class GetPaginatedFlagsUseCase(ApplicationDbContext dbContext, IFlagUserDetails userDetails)
 {
@@ -47,7 +47,6 @@ public class GetPaginatedFlagsUseCase(ApplicationDbContext dbContext, IFlagUserD
     private async Task<Result<List<FlagEntity>>> GetFromDb(string? search, int page, int size)
     {
         var query = _dbContext.Flags
-            .Where(x => x.UserId == _userDetails.UserId)
             .Skip(size * (page - 1))
             .Take(size);
 
@@ -59,13 +58,13 @@ public class GetPaginatedFlagsUseCase(ApplicationDbContext dbContext, IFlagUserD
 
     private async Task<Result<int>> TotalElements(string? search)
     {
-        var query = _dbContext.Flags
-            .Where(x => x.UserId == _userDetails.UserId);
-
         if (!string.IsNullOrWhiteSpace(search))
             // ReSharper disable once EntityFramework.UnsupportedServerSideFunctionCall
-            query = query.Where(x => x.Name.Contains(search, StringComparison.InvariantCultureIgnoreCase));
+            return await _dbContext.Flags
+                .Where(x =>
+                    x.Name.Contains(search, StringComparison.InvariantCultureIgnoreCase))
+                .CountAsync();
 
-        return await query.CountAsync();
+        return await _dbContext.Flags.CountAsync();
     }
 }

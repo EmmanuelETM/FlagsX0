@@ -1,4 +1,5 @@
 using FlagsX0.Business.UseCases;
+using FlagsX0.Business.UseCases.Flags;
 using FlagsX0.DTOs;
 using FlagsX0.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -9,17 +10,13 @@ namespace FlagsX0.Controllers;
 [Authorize]
 [Route("[controller]")]
 public class FlagsController(
-    AddFlagUseCase addFlagUseCase,
-    GetPaginatedFlagsUseCase getPaginatedFlagsUseCase,
-    GetSingleFlagUseCase getSingleFlagUseCase,
-    UpdateFlagUseCase updateFlagUseCase,
-    DeleteFlagUseCase deleteFlagUseCase) : Controller
+    FlagsUseCases flags) : Controller
 {
-    private readonly AddFlagUseCase _addFlagUseCase = addFlagUseCase;
-    private readonly DeleteFlagUseCase _deleteFlagUseCase = deleteFlagUseCase;
-    private readonly GetPaginatedFlagsUseCase _getPaginatedFlagsUseCase = getPaginatedFlagsUseCase;
-    private readonly GetSingleFlagUseCase _getSingleFlagUseCase = getSingleFlagUseCase;
-    private readonly UpdateFlagUseCase _updateFlagUseCase = updateFlagUseCase;
+    private readonly AddFlagUseCase _addFlagUseCase = flags.Add;
+    private readonly DeleteFlagUseCase _deleteFlagUseCase = flags.Delete;
+    private readonly GetPaginatedFlagsUseCase _getPaginatedFlagsUseCase = flags.GetPaginated;
+    private readonly GetSingleFlagUseCase _getSingleFlagUseCase = flags.Get;
+    private readonly UpdateFlagUseCase _updateFlagUseCase = flags.Update;
 
     [HttpGet("Create")]
     public IActionResult Create()
