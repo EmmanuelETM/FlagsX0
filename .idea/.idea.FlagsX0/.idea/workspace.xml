@@ -10,115 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FlagsX0.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/.config/dotnet-tools.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Areas/Identity/Pages/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/Mappers/FlagEntityExtension.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/Services/FlagUserDetails.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/Services/Pagination.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/AddFlagUseCase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/DeleteFlagUseCase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/GetPaginatedFlagsUseCase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/GetSingleFlagUseCase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/UpdateFlagUseCase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Business/UseCases/FlagsUseCases.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Controllers/HomeController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/DTOs/FlagDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/ApplicationDbContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Entities/FlagEntity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Migrations/20250908153954_InitialMigration.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Migrations/20250908153954_InitialMigration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Migrations/20250908154331_AddFlagEntity.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Migrations/20250908154331_AddFlagEntity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Migrations/20250912225305_UpdateFlagEntity.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Migrations/20250912225305_UpdateFlagEntity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/FlagsX0.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Models/ErrorViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Models/FlagIndexViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Models/FlagViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Models/SingleFlagViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/Create.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Flags/SingleFlag.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Home/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Shared/Error.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Shared/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Shared/_LoginPartial.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/Views/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/js/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery/dist/jquery.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery/dist/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlagsX0/wwwroot/lib/jquery/dist/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/DeleteFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/DeleteFlagUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/GetSingleFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/GetSingleFlagUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/UpdateFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/UpdateFlagUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FlagsX0.UnitTest/FlagsX0.UnitTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/FlagsX0.UnitTest/FlagsX0.UnitTest.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FlagsX0.UnitTest/UnitTest1.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,36 +30,13 @@
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Mappers/FlagEntityExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Services/FlagUserDetails.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/Services/Pagination.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Business/Services/Pagination.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/AddFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/DeleteFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/GetPaginatedFlagsUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/GetSingleFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/Flags/UpdateFlagUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Business/UseCases/FlagsUseCases.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Business/UseCases/GetPaginatedFlagsUseCase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Controllers/FlagsController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Controllers/FlagsController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Controllers/FlagsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/DTOs/FlagDto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Data/Entities/FlagEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Models/FlagIndexViewModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Models/FlagIndexViewModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Models/FlagIndexViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Models/FlagViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Models/SingleFlagViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Views/Flags/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Views/Flags/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Views/Flags/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Views/Flags/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/emmanuel_tm/dev/Csharp/RiderProjects/FlagsX0/FlagsX0/Views/Flags/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FlagsX0/Views/Flags/SingleFlag.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Business/UseCases/Flags/AddFlagsUseCaseTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Business/UseCases/Flags/DeleteFlagsUseCaseTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Business/UseCases/Flags/GetPaginatedFlagsUseCaseTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Business/UseCases/Flags/GetSingleFlagUseCaseTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Business/UseCases/Flags/UpdateFlagUseCaseTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Services/FlagUserDetailsStub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Services/MemoDb.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -183,6 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "bbec90e0-0800-4339-b2fb-40cb130dec94.executor": "Debug",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/home/emmanuel_tm/Downloads/FlagsX0",
@@ -272,7 +147,8 @@
       <workItem from="1757855408511" duration="2233000" />
       <workItem from="1758057985340" duration="4757000" />
       <workItem from="1758312656769" duration="55000" />
-      <workItem from="1758312734920" duration="93000" />
+      <workItem from="1758312734920" duration="3436000" />
+      <workItem from="1758327890545" duration="9620000" />
     </task>
     <task id="LOCAL-00001" summary="Validated the input for the Page and PageSize for the Pagination.">
       <option name="closed" value="true" />
@@ -282,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758060437476</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed Project structure, and Added Unit Test Project.">
+      <option name="closed" value="true" />
+      <created>1758313084826</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758313084826</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +219,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things" />
     <MESSAGE value="Validated the input for the Page and PageSize for the Pagination." />
-    <option name="LAST_COMMIT_MESSAGE" value="Validated the input for the Page and PageSize for the Pagination." />
+    <MESSAGE value="Changed Project structure, and Added Unit Test Project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Project structure, and Added Unit Test Project." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -351,6 +236,12 @@
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.InvalidOperationException" breakIfHandledByUserCode="true" isInternal="false" displayValue="InvalidOperationException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

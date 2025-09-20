@@ -11,18 +11,20 @@ public class DeleteFlagUseCase(ApplicationDbContext dbContext)
 
     public async Task<Result<bool>> Execute(string flagName)
     {
-        return await GetFromDb(flagName).Bind(DeleteEntity);
+        return await GetFromDb(flagName).Bind(DeleteFlag);
     }
 
     private async Task<Result<FlagEntity>> GetFromDb(string flagName)
     {
-        return await _dbContext.Flags
+        var result = await _dbContext.Flags
             .Where(f =>
                 f.Name.ToLower() == flagName.ToLower())
-            .SingleAsync();
+            .SingleOrDefaultAsync();
+
+        return result ?? Result.Failure<FlagEntity>("Flag not found");
     }
 
-    private async Task<Result<bool>> DeleteEntity(FlagEntity entity)
+    private async Task<Result<bool>> DeleteFlag(FlagEntity entity)
     {
         entity.IsDeleted = true;
         entity.DeletedTimeUtc = DateTime.UtcNow;

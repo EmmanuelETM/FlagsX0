@@ -18,10 +18,12 @@ public class GetSingleFlagUseCase(ApplicationDbContext dbContext)
 
     private async Task<Result<FlagEntity>> GetFromDb(string flagName)
     {
-        return await _dbContext.Flags
+        var result = await _dbContext.Flags
             .Where(flag =>
                 EF.Functions.Like(flag.Name.ToLower(), flagName.ToLower()))
             .AsNoTracking()
-            .SingleAsync();
+            .SingleOrDefaultAsync();
+
+        return result ?? Result.Failure<FlagEntity>("Flag not found");
     }
 }

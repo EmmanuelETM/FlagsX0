@@ -28,10 +28,10 @@ public class UpdateFlagUseCase(ApplicationDbContext dbContext)
         return exists ? Result.Failure<FlagDto>("Flag with that name already exists") : flag;
     }
 
-    private async Task<Result<FlagEntity>> GetFromDb(int Id)
+    private async Task<Result<FlagEntity>> GetFromDb(int id)
     {
         return await _dbContext.Flags
-            .Where(f => f.Id == Id)
+            .Where(f => f.Id == id)
             .SingleAsync();
     }
 
