@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlagsX0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/DeleteFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/DeleteFlagUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/GetSingleFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/GetSingleFlagUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/UpdateFlagUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlagsX0/Business/UseCases/Flags/UpdateFlagUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/FlagsX0.UnitTest/FlagsX0.UnitTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/FlagsX0.UnitTest/FlagsX0.UnitTest.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/FlagsX0.UnitTest/UnitTest1.cs" beforeDir="false" />
-    </list>
+    <list default="true" id="66bf2cb3-5e70-4501-ad55-acdc90d1a0b6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +23,7 @@
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/dev/Csharp/RiderProjects/FlagsX0/src/FlagsX0/Business/UseCases/Flags/DeleteFlagUseCase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Business/UseCases/Flags/AddFlagsUseCaseTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Business/UseCases/Flags/DeleteFlagsUseCaseTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/FlagsX0.UnitTest/Business/UseCases/Flags/GetPaginatedFlagsUseCaseTest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -148,7 +142,7 @@
       <workItem from="1758057985340" duration="4757000" />
       <workItem from="1758312656769" duration="55000" />
       <workItem from="1758312734920" duration="3436000" />
-      <workItem from="1758327890545" duration="9620000" />
+      <workItem from="1758327890545" duration="9826000" />
     </task>
     <task id="LOCAL-00001" summary="Validated the input for the Page and PageSize for the Pagination.">
       <option name="closed" value="true" />
@@ -166,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758313084826</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creating Unit Tests for the UseCases, this is epic">
+      <option name="closed" value="true" />
+      <created>1758338668074</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758338668074</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +222,8 @@
     <MESSAGE value="Added GetFlagUseCase, Mappers for FlagEntity/FlagDto, Service for the userDetails, and refactor a couple of things" />
     <MESSAGE value="Validated the input for the Page and PageSize for the Pagination." />
     <MESSAGE value="Changed Project structure, and Added Unit Test Project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Project structure, and Added Unit Test Project." />
+    <MESSAGE value="Creating Unit Tests for the UseCases, this is epic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating Unit Tests for the UseCases, this is epic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
