@@ -4,8 +4,11 @@ using FlagsX0.Business.UseCases.Flags;
 using FlagsX0.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddAuthentication().AddBearerToken("Identity.Bearer");
+builder.Services.AddAuthorization();
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
@@ -14,35 +17,57 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddControllersWithViews();
 
-// HTTPContextAccessor
-builder.Services.AddHttpContextAccessor();
-
-// Dependency Injection
 builder.Services.AddScoped<FlagsUseCases>();
 builder.Services.AddScoped<AddFlagUseCase>();
 builder.Services.AddScoped<GetPaginatedFlagsUseCase>();
 builder.Services.AddScoped<GetSingleFlagUseCase>();
 builder.Services.AddScoped<UpdateFlagUseCase>();
 builder.Services.AddScoped<DeleteFlagUseCase>();
+
 builder.Services.AddScoped<IFlagUserDetails, FlagUserDetails>();
 
-// Building the app
-var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddSwaggerGen(c =>
 {
-    var ctx = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    ctx.Database.Migrate();
-}
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Enter your bearer token"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
+
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 else
 {
@@ -51,21 +76,26 @@ else
     app.UseHsts();
 }
 
+
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    context.Database.Migrate();
+}
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapStaticAssets();
-
 app.MapControllerRoute(
-        "default",
-        "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    "default",
+    "{controller=Home}/{action=Index}/{id?}");
 
-app.MapRazorPages()
-    .WithStaticAssets();
+app.MapRazorPages();
+app.MapGroup("/account").MapIdentityApi<IdentityUser>();
 
 app.Run();

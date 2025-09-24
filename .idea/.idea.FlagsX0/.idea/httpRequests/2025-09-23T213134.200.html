@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Log in - FlagsX0</title>
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/site.css?v=zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD-cbo"/>
+    <link rel="stylesheet" href="/FlagsX0.styles.css?v=SoeF9G0S_9CJGLwewb44WsI-7VBgjmqSnlotm6HPoN0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+<header b-j5jl2ybrcc>
+    <nav b-j5jl2ybrcc
+         class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div b-j5jl2ybrcc class="container-fluid">
+            <a class="navbar-brand" href="/">FlagsX0</a>
+            <button b-j5jl2ybrcc class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span b-j5jl2ybrcc class="navbar-toggler-icon"></span>
+            </button>
+            <div b-j5jl2ybrcc class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul b-j5jl2ybrcc class="navbar-nav flex-grow-1">
+                    <li b-j5jl2ybrcc class="nav-item">
+                        <a class="nav-link text-dark" href="/">Home</a>
+                    </li>
+                    <li b-j5jl2ybrcc class="nav-item">
+                        <a class="nav-link text-dark" href="/Flags">Flags</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/Identity/Account/Register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/Identity/Account/Login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div b-j5jl2ybrcc class="container">
+    <main b-j5jl2ybrcc role="main" class="pb-3">
+
+
+        <h1>Log in</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <section>
+                    <form id="account" method="post">
+                        <h2>Use a local account to log in.</h2>
+                        <hr/>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" autocomplete="username" aria-required="true"
+                                   placeholder="name@example.com" type="email" data-val="true"
+                                   data-val-email="The Email field is not a valid e-mail address."
+                                   data-val-required="The Email field is required." id="Input_Email" name="Input.Email"
+                                   value=""/>
+                            <label class="form-label" for="Input_Email">Email</label>
+                            <span class="text-danger field-validation-valid" data-valmsg-for="Input.Email"
+                                  data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" autocomplete="current-password" aria-required="true"
+                                   placeholder="password" type="password" data-val="true"
+                                   data-val-required="The Password field is required." id="Input_Password"
+                                   name="Input.Password"/>
+                            <label class="form-label" for="Input_Password">Password</label>
+                            <span class="text-danger field-validation-valid" data-valmsg-for="Input.Password"
+                                  data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label class="form-label" for="Input_RememberMe">
+                                <input class="form-check-input" type="checkbox" data-val="true"
+                                       data-val-required="The Remember me? field is required." id="Input_RememberMe"
+                                       name="Input.RememberMe" value="true"/>
+                                Remember me?
+                            </label>
+                        </div>
+                        <div>
+                            <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                        </div>
+                        <div>
+                            <p>
+                                <a id="forgot-password" href="/Identity/Account/ForgotPassword">Forgot your
+                                    password?</a>
+                            </p>
+                            <p>
+                                <a href="/Identity/Account/Register?returnUrl=%2Fapi%2FFlags%2Felpepe">Register as a new
+                                    user</a>
+                            </p>
+                            <p>
+                                <a id="resend-confirmation" href="/Identity/Account/ResendEmailConfirmation">Resend
+                                    email confirmation</a>
+                            </p>
+                        </div>
+                        <input name="__RequestVerificationToken" type="hidden"
+                               value="CfDJ8Fl3eE4D9ThAj-F_AmfErqk3BSLUYFRY_36dW2TgAR76-2CaB_n5ouNsBkItvGXUuoboDZ5DAkGeTDn7r0UMOuz2ivxvGc6L5FDIIge7Bdyx_zFoMXnYtdWjbFcEI_yYtGDnRg34_RPkEau7f-u7HdI"/><input
+                            name="Input.RememberMe" type="hidden" value="false"/></form>
+                </section>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2">
+                <section>
+                    <h3>Use another service to log in.</h3>
+                    <hr/>
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See this <a
+                                href="https://go.microsoft.com/fwlink/?LinkID=532715">article
+                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </main>
+</div>
+
+<footer b-j5jl2ybrcc class="border-top footer text-muted">
+    <div b-j5jl2ybrcc class="container">
+        &copy; 2025 - FlagsX0
+    </div>
+</footer>
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/site.js?v=y_Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM"></script>
+
+
+<script src="/Identity/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="/Identity/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+
+
+</body>
+</html>

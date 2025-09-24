@@ -9,6 +9,7 @@ namespace FlagsX0.Controllers;
 
 [Authorize]
 [Route("[controller]")]
+[ApiExplorerSettings(IgnoreApi = true)]
 public class FlagsController(
     FlagsUseCases flags) : Controller
 {

@@ -1,0 +1,267 @@
+GET http://localhost:5286/api/Flags/elpepe
+CONTENT-TYPE: application/json
+Authorization: Bearer CfDJ8Fl3eE4D9ThAj-F_AmfErqkzZ1gcvt49GmL_tfK_QIp2EbU2Ce-d0ky_e3gA3WTFpOnQdqBg_j-3USGmYJmKB5oYLKIVy33C_z81P4hDWSzpZmBrfo7AvROzg-Iq2JpXa2tCMdmImKW1T_PUpVY8vJL-LloF7q-T9X2_2HP1fwDifpFAMHFIND6TrPsTigFU2QDsPuNmnM5X-mQ5zYXkHYcyH7vukPGJMN_5eqW12yL7eIddcaYrFbidikKQQ5-DjxfSXZzD5QpfvIa7K_oS6w5MwMV_h7A5M-fGeMtm32p2foVI5wU2s6J0P42uZp-soolJEDAsfnbMZZdf2mfIaHNrQlJrOyvRlto6s8W7Nu50AAAQMhbk-9kb1BZrAzmoh7CJ08BY6azMWM5aDhWRA_zooR9fdhjHi3pa2suQt6myXQRZaJHa-8y7x3UOPI8dbJHAoJAauyJUIyZ1HL4PJMZL2CPHQFkS9g8pnUYEMteIRYSF2y0Ka1uwnO6QjE7uHUIKAe2ca993qKLOs84_zO8of7c3TOhIIKbZP5MEcZZmDJ6yV3KzneyTuRjY5rarT_F3dbXhjoh7xgbr7s_miB432AH0cSPc0LG8G_ysGKOz2EvMguwV_4sh_ai_ueYBMM3x3SSX8qnLhnZFwTlv1Tj8Vh8uJRR05FnQCZepOQErI_uzVHTYbazeCfaZoFr--S_7y-2vwg8tI5chh1_AaV2LqInMmBXRn-WndeuevGqO
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+cookie: .AspNetCore.Identity.Bearer=CfDJ8Fl3eE4D9ThAj-F_AmfErqnzz2yGeusbDPzqXfB2pWwKjNp8hr4Hx8qkgrRh0CH-DSqqJ_VEOCAPu-JJEyHiYnR3Jq07zcZbR-tBEBzKVdKZhAKw8UWOK18kOvb4iSqbqc6AoRkIBVSrjdVGs4QxZaJbE8GHTOYmCPJkeiFMaKo89CgqBZgeWF14UB_X45Nl59ddpr0bXhexata1gJ_kgiwyjEag29QFi9fXEmg7BNIfJbEqDtkbiGZs_MnmXmsp2S7czhSR9v3vBtuvkHErohkr6vXh1T4C1OH-c7QFutFRH14aA6alm9Tzzo09mmqu2O9LkcyFrLF4iSVl7b2OS77IfyM68FCoGoKPpf-Yk8b9h91qxcgwSDVt3ck5Okl6PU77Z7nRGKHhBCoKbtO87lYjuOlNgLYkwo8Y-ky75FIas3NQGtloZjRy73cdaRV-3BMpqrN-bL-xghXA-81nEF0XmV96q7HfNkXp66P3apHO_VbnkL0lxbsmqjYlRa7O4gUN3HKLKQ0VKdLvvw-STMYAcU_xRrEcqD-dphOfkpgXtYncG7wLLLM96mHOk-Ue-GkN05KVcghcPBPuLnmQDWLYyWqIyCImrqCKbdaRU6aMty3cuKw3XzdCyEwsD345lujhbBuUA9Xr8W6i6vwb1ie5rCGZMTy3V2dpomT39zpgloWEIoECny0X3AHBDxr_BXvk2KsdFYnfjYuxsqLiHMDGKn-_S8fX9hlVNHsUvAvD
+
+<> 2025-09-23T213134.200.html
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: .AspNetCore.Identity.Bearer=CfDJ8Fl3eE4D9ThAj-F_AmfErqkgVuZDUBarQyd_yaDd-pk34-hASEAz2rmC2ICzNKBhz1iPz0lT-hc50Mpee3CntJmo8GYJrH8zf9KG9o_Ms2XAhP4fUg_owiXuUpQVsYT8ofV71NJSMfwZmpML6j5RiIRPu99jsDHg9nOl9-hrBYM9_K2Yj8qIlrn9rHJEml3cqIFRcbv94lL82lyXahthjpYhTMXzKKOtD5mZoUVr3ureKiLW2LradB1szC_5UqaSvhgc0Mz7FX5FnkqsEaaZanDNcbLyaFdqoT9l94liTmPwlKEOVVJDw9CmIwu2VLLu_PNRt3s71EF1oGyRgqcmfnXoaZs6xwX62CeMqZu7uz1jVfGU58Eu06DN680mVq3a4MaBQdeU5O612aYVUhICHVWG_YxAA08eediMfaTfgY8FyQDfAieYoe7miu9UxpTk_Y5VGsAVkT6k_OiUwswEqmWPxeX6SIp_T5kz0-FUO69dx6AW12BsTHrC205DgiR8wiErXLihhWvJnWbQPtcYmgRGJ4buamv4X34e-1LN4m07DGs6I7p0jOsGp3lTZ4vH6c0QbxeBr8JQYkGF6MP-NhopOxTJs6nIJMo08SvNDHKO_2_VABPqCC620eiriNsqdMMSVKaWDCtSUiHfEUn8v8FghhOv7I-tuCauYtCVRUnxGOzhbBftXkP0TVSLJ1AS5Dmhd0wvB1UooHWivLMWnP8Ii6QMTSX3zd5YLFB0dveb
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1234"
+}
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: .AspNetCore.Identity.Bearer=CfDJ8Fl3eE4D9ThAj-F_AmfErqngu_MaEzDtQROMZtcez3Ik6pImrAtx_8e1FiBJ03e151gDvVlJgwOh6CpUsGgwET_m6gUT2N4thtDlWD0v6Zs74uoniDqO8XNnpVKmIM6VZs49r4tjSnZxqsaktJpWk_vPANfY8k3p9I4CuCYwcSHJ9vBqJzUAdCv0JpLPVIH71jfBH0UMMITWi-48bxANaVszXyPX6hXI5nKooaQXtyWlYBFu5g1CLWiUmUD4gfLw2MysqA4on5xX71ZUDTMC-DHhneGAK0gkEeGlGWGMDaYwJgpzMEp5KuzYvF3Pgmvovcl5BM29UoMUMGATfvq48CFzho9eCEsB6LCL7G0NP07_2edO3zlAn-lg2658jIkvJyC4FADGhuSWXPDxIPm46fHPAwQuRCPd_AdSTxD9TMFtNI1cvkeD33Z27tH33EGFNlLsmMWlm0Fs33Vxu_n5Psk1SrhzH8xWHR4QH2trVRhsUoQnBzs5X53zM_PbS2tTmHiSETaCM2lIlDPqIX5y-nDBccb1DuG9Zluz7SZ0GMuYQ0P3RoNrZnt8LQnSUv7pLTt2HfoETkf6MXovyjSemH7r5uHuGFqa5tHh6in3ZG4o-jYZRb5S0KpyfyqYOxjzeqW46Ei8V_JS0SzyxXPiORUKSn0XsOZHY9VWf2gYIdmTXJ00igLenax0Cs5FLLmEvhPtwq_MEG74dS71bduBXanJ03uMHTTyrE_BhJrurjN9
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1234"
+}
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: .AspNetCore.Identity.Bearer=CfDJ8Fl3eE4D9ThAj-F_AmfErqngu_MaEzDtQROMZtcez3Ik6pImrAtx_8e1FiBJ03e151gDvVlJgwOh6CpUsGgwET_m6gUT2N4thtDlWD0v6Zs74uoniDqO8XNnpVKmIM6VZs49r4tjSnZxqsaktJpWk_vPANfY8k3p9I4CuCYwcSHJ9vBqJzUAdCv0JpLPVIH71jfBH0UMMITWi-48bxANaVszXyPX6hXI5nKooaQXtyWlYBFu5g1CLWiUmUD4gfLw2MysqA4on5xX71ZUDTMC-DHhneGAK0gkEeGlGWGMDaYwJgpzMEp5KuzYvF3Pgmvovcl5BM29UoMUMGATfvq48CFzho9eCEsB6LCL7G0NP07_2edO3zlAn-lg2658jIkvJyC4FADGhuSWXPDxIPm46fHPAwQuRCPd_AdSTxD9TMFtNI1cvkeD33Z27tH33EGFNlLsmMWlm0Fs33Vxu_n5Psk1SrhzH8xWHR4QH2trVRhsUoQnBzs5X53zM_PbS2tTmHiSETaCM2lIlDPqIX5y-nDBccb1DuG9Zluz7SZ0GMuYQ0P3RoNrZnt8LQnSUv7pLTt2HfoETkf6MXovyjSemH7r5uHuGFqa5tHh6in3ZG4o-jYZRb5S0KpyfyqYOxjzeqW46Ei8V_JS0SzyxXPiORUKSn0XsOZHY9VWf2gYIdmTXJ00igLenax0Cs5FLLmEvhPtwq_MEG74dS71bduBXanJ03uMHTTyrE_BhJrurjN9
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1234"
+}
+
+<> 2025-09-23T000345.200.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: .AspNetCore.Identity.Bearer=CfDJ8Fl3eE4D9ThAj-F_AmfErqngu_MaEzDtQROMZtcez3Ik6pImrAtx_8e1FiBJ03e151gDvVlJgwOh6CpUsGgwET_m6gUT2N4thtDlWD0v6Zs74uoniDqO8XNnpVKmIM6VZs49r4tjSnZxqsaktJpWk_vPANfY8k3p9I4CuCYwcSHJ9vBqJzUAdCv0JpLPVIH71jfBH0UMMITWi-48bxANaVszXyPX6hXI5nKooaQXtyWlYBFu5g1CLWiUmUD4gfLw2MysqA4on5xX71ZUDTMC-DHhneGAK0gkEeGlGWGMDaYwJgpzMEp5KuzYvF3Pgmvovcl5BM29UoMUMGATfvq48CFzho9eCEsB6LCL7G0NP07_2edO3zlAn-lg2658jIkvJyC4FADGhuSWXPDxIPm46fHPAwQuRCPd_AdSTxD9TMFtNI1cvkeD33Z27tH33EGFNlLsmMWlm0Fs33Vxu_n5Psk1SrhzH8xWHR4QH2trVRhsUoQnBzs5X53zM_PbS2tTmHiSETaCM2lIlDPqIX5y-nDBccb1DuG9Zluz7SZ0GMuYQ0P3RoNrZnt8LQnSUv7pLTt2HfoETkf6MXovyjSemH7r5uHuGFqa5tHh6in3ZG4o-jYZRb5S0KpyfyqYOxjzeqW46Ei8V_JS0SzyxXPiORUKSn0XsOZHY9VWf2gYIdmTXJ00igLenax0Cs5FLLmEvhPtwq_MEG74dS71bduBXanJ03uMHTTyrE_BhJrurjN9
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1234"
+}
+
+<> 2025-09-23T000147.200.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: .AspNetCore.Identity.Bearer=CfDJ8Fl3eE4D9ThAj-F_AmfErqngu_MaEzDtQROMZtcez3Ik6pImrAtx_8e1FiBJ03e151gDvVlJgwOh6CpUsGgwET_m6gUT2N4thtDlWD0v6Zs74uoniDqO8XNnpVKmIM6VZs49r4tjSnZxqsaktJpWk_vPANfY8k3p9I4CuCYwcSHJ9vBqJzUAdCv0JpLPVIH71jfBH0UMMITWi-48bxANaVszXyPX6hXI5nKooaQXtyWlYBFu5g1CLWiUmUD4gfLw2MysqA4on5xX71ZUDTMC-DHhneGAK0gkEeGlGWGMDaYwJgpzMEp5KuzYvF3Pgmvovcl5BM29UoMUMGATfvq48CFzho9eCEsB6LCL7G0NP07_2edO3zlAn-lg2658jIkvJyC4FADGhuSWXPDxIPm46fHPAwQuRCPd_AdSTxD9TMFtNI1cvkeD33Z27tH33EGFNlLsmMWlm0Fs33Vxu_n5Psk1SrhzH8xWHR4QH2trVRhsUoQnBzs5X53zM_PbS2tTmHiSETaCM2lIlDPqIX5y-nDBccb1DuG9Zluz7SZ0GMuYQ0P3RoNrZnt8LQnSUv7pLTt2HfoETkf6MXovyjSemH7r5uHuGFqa5tHh6in3ZG4o-jYZRb5S0KpyfyqYOxjzeqW46Ei8V_JS0SzyxXPiORUKSn0XsOZHY9VWf2gYIdmTXJ00igLenax0Cs5FLLmEvhPtwq_MEG74dS71bduBXanJ03uMHTTyrE_BhJrurjN9
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1234"
+}
+
+<> 2025-09-22T235805.200.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1234"
+}
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1234"
+}
+
+<> 2025-09-22T235517.200.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1015"
+}
+
+<> 2025-09-22T235348.401.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1234"
+}
+
+<> 2025-09-22T235336.200.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1015"
+}
+
+<> 2025-09-22T234937.401.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1015"
+}
+
+<> 2025-09-22T234701.401.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1015"
+}
+
+<> 2025-09-22T234236.401.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1015"
+}
+
+<> 2025-09-22T233920.401.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1015"
+}
+
+<> 2025-09-22T233513.401.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1015"
+}
+
+<> 2025-09-22T233406.401.json
+
+###
+
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1015"
+}
+
+<> 2025-09-22T233112.401.json
+
+###
+

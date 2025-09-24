@@ -1,0 +1,13 @@
+### Login
+POST http://localhost:5286/account/login
+CONTENT-TYPE: application/json
+
+{
+  "email": "elpepe@example.com",
+  "password": "Etm_1234"
+}
+
+### Get Single Flag
+GET http://localhost:5286/api/Flags/elpepe
+CONTENT-TYPE: application/json
+Authorization: Bearer CfDJ8Fl3eE4D9ThAj-F_AmfErqkzZ1gcvt49GmL_tfK_QIp2EbU2Ce-d0ky_e3gA3WTFpOnQdqBg_j-3USGmYJmKB5oYLKIVy33C_z81P4hDWSzpZmBrfo7AvROzg-Iq2JpXa2tCMdmImKW1T_PUpVY8vJL-LloF7q-T9X2_2HP1fwDifpFAMHFIND6TrPsTigFU2QDsPuNmnM5X-mQ5zYXkHYcyH7vukPGJMN_5eqW12yL7eIddcaYrFbidikKQQ5-DjxfSXZzD5QpfvIa7K_oS6w5MwMV_h7A5M-fGeMtm32p2foVI5wU2s6J0P42uZp-soolJEDAsfnbMZZdf2mfIaHNrQlJrOyvRlto6s8W7Nu50AAAQMhbk-9kb1BZrAzmoh7CJ08BY6azMWM5aDhWRA_zooR9fdhjHi3pa2suQt6myXQRZaJHa-8y7x3UOPI8dbJHAoJAauyJUIyZ1HL4PJMZL2CPHQFkS9g8pnUYEMteIRYSF2y0Ka1uwnO6QjE7uHUIKAe2ca993qKLOs84_zO8of7c3TOhIIKbZP5MEcZZmDJ6yV3KzneyTuRjY5rarT_F3dbXhjoh7xgbr7s_miB432AH0cSPc0LG8G_ysGKOz2EvMguwV_4sh_ai_ueYBMM3x3SSX8qnLhnZFwTlv1Tj8Vh8uJRR05FnQCZepOQErI_uzVHTYbazeCfaZoFr--S_7y-2vwg8tI5chh1_AaV2LqInMmBXRn-WndeuevGqO
